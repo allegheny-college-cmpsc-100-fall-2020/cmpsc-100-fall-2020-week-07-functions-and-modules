@@ -23,7 +23,7 @@ Week_07_Worksheet_0_Final_Exercise.py:
     MatchFileFragment --fragment "def decipher(enciphered)" --count 1 --exact
     MatchFileFragment --fragment "return message" --count 1 --exact
     
-Week 07 - Worksheet 1 - Modules.ipynb.ipynb:
+Week 07 - Worksheet 1 - Modules.ipynb:
     ConfirmFileExists
     MatchFileFragment --fragment "TODO" --count 0 --exact
     MatchFileFragment --fragment "import random" --count 2 --exact
