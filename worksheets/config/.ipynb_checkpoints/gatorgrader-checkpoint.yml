@@ -1,0 +1,39 @@
+---
+name: cmpsc-100-week-07-worksheets
+break: true
+indent: 4
+---
+
+Week 07 - Worksheet 0 - Syntax - Functions.ipynb:
+    ConfirmFileExists
+    MatchFileFragment --fragment "TODO" --count 0 --exact
+    MatchFileFragment --fragment "def square(number)" --count 1 --exact
+    MatchFileFragment --fragment "number * number" --count 1 --exact
+    MatchFileFragment --fragment "The square of 4 is {square(4)}" --count 1 --exact
+    MatchFileFragment --fragment "The square of 8 is {square(8)}" --count 1 --exact
+    MatchFileFragment --fragment "The product of the numbers is 6955200" --count 1 --exact
+    MatchFileFragment --fragment "{multiply(4,8,15,15,23,42)}" --count 1 --exact
+    MatchFileFragment --fragment "return result" --count 1 --exact
+
+Week_07_Worksheet_0_Final_Exercise.py:
+    ConfirmFileExists
+    MatchFileFragment --fragment "TODO" --count 0 --exact
+    MatchFileFragment --fragment "chr(" --count 1
+    MatchFileFragment --fragment "ord(" --count 1
+    MatchFileFragment --fragment "def decipher(enciphered)" --count 1 --exact
+    MatchFileFragment --fragment "return message" --count 1 --exact
+    
+Week 07 - Worksheet 1 - Modules.ipynb.ipynb:
+    ConfirmFileExists
+    MatchFileFragment --fragment "TODO" --count 0 --exact
+    MatchFileFragment --fragment "import random" --count 2 --exact
+    MatchFileFragment --fragment "print(random.randint(" --count 3
+    MatchFileFragment --fragment "random.shuffle(cat_names)" --count 1 --exact
+    
+     
+Week_07_Worksheet_1_Final_Exercise.py:
+    ConfirmFileExists
+    MatchFileFragment --fragment "TODO" --count 0 --exact
+
+CountCommandOutput --command "python3 Week_07_Worksheet_1_Final_Exercise.py" --count 7 --exact
+MatchCommandFragment --command "python3 Week_07_Worksheet_0_Final_Exercise.py" --fragment "If you've deciphered this and know it, clap your hands." --count 1 --exact

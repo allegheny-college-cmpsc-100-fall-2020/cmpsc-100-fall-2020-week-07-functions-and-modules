@@ -1,0 +1,24 @@
+---
+name: cmpsc-100-week-07-lab
+break: true
+indent: 4
+---
+
+Week_07_Lab_HumanQuest.py:
+    ConfirmFileExists
+    MatchFileFragment --fragment "TODO" --count 0 --exact
+    CountSingleLineComments --language Python --count 8
+    MatchFileFragment --fragment "open(" --count 1 --exact
+    MatchFileFragment --fragment "def die_roll(" --count 1 --exact
+    MatchFileFragment --fragment "return" --count 1 --exact
+    MatchFileFragment --fragment "random.randint(" --count 1 --exact
+    MatchFileFragment --fragment "import random" --count 1 --exact
+    MatchFileFragment --fragment "print(f" --count 1
+
+reflection.md:
+    ConfirmFileExists
+    MatchFileFragment --fragment "TODO" --count 0 --exact
+    CountFileWords --count 300
+    CountFileParagraphs --count 6
+
+CountCommandOutput --command "python3 Week_07_Lab_HumanQuest.py" --count 7
